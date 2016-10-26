@@ -89,8 +89,7 @@ public class Gui extends JFrame {
                         add(new JButton() {
                             {
                                 setText("  ↪  ");
-                                addActionListener(
-                                        e -> new StartAction(listmodel).action(listmodel, Gui.this.watermarkPath));
+                                addActionListener(e -> new StartAction().action(listmodel, Gui.this.watermarkPath));
                             }
                         }, BorderLayout.EAST);
                     }
